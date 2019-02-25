@@ -1,0 +1,20 @@
+#ICMP=Internet Controll Messaging Protocol
+It is used to send error messages to the source from the routers,the intermediate layers so as to rectify the error of sending the packet over the network
+It contains of the IP Source and the message.
+It is sent as a datagram 
+It is mostly used in diagnosis such as ping and traceroute
+It is used to handle the DOS(Denial of Service) or POD (Ping of Death)
+ICMP is mostly sent from the router to the host to it is connected to and in aws it is used in jumbo frames
+Jumbo Frames is the concept where the data is sent in packets to the host from the other host.
+Jumbo Frames are large data carriers .This can be achieved by increasing the payload of the packet rather than sending multiple packetsw withe the same overheads
+These overheads (.....redundent data which is not a business related one)
+Sending the data in packets is a measured in MTU
+(Maximum Transfer Units)
+These units are 1500 in maximum in the Internet but in aws we can use jumbo frames to send more amount of data which can go upto 9001
+we can use Jumbo Frames in internat network , VPC paring only.
+
+
+what happens if data is more in MTU ??
+In that case the gateway tries to fragment it by checking the fragement flag is set or not 
+Creates error message respectively and sends to the host as ICMP message
+ 
